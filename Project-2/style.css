@@ -17,6 +17,7 @@ html, body{
 }
 
 #left{
+  overflow: hidden;
   position: relative;
   width: 45%;
   height: 100%;
@@ -55,21 +56,50 @@ html, body{
 }
 
 #content-text{
+  display: flex;
+  gap: 10px;
   color: #fff;
   position: absolute;
-  bottom: -30%;
+  top: 110%;
   left: 0;
 }
-
-#content-text h3{
-  font-size: 16px;
+#left-part{
+  width: 30%;
+}
+#right-part{
+  width: 70%;
+}
+#left-part h3{
+  margin-bottom: 10px;
+  font-size: 12px;
   font-weight: 500;
 }
-
-#content-text p{
-  opacity: 0.5;
+#right-part p{
+  line-height: 15px;
   font-weight: 500;
+  font-size: 10px;
+}
+
+#left-bottom-content{
+  position: absolute;
+  left: 5%;
+  bottom: -10%;
+  transform-origin: 0% 50%;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+#line{
+  width: 200px;
+  height: 1px;
+  background: #fff;
+}
+#left-bottom-content h5{
+  letter-spacing: 5px;
   font-size: 12px;
+  font-weight: 400;
 }
 
 #center{
